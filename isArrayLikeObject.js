@@ -13,7 +13,7 @@ const isObjectLike = (obj) => {
   return obj && typeof obj === 'object';
 };
 
-// 排除函数以及不存在length属性的obj 那么就只剩下存在length的obj(likeObj)/Array
+// 排除函数以及不存在length属性的obj 那么就只剩下存在length的obj(likeObj)
 const isArrayLike = (obj) => {
   return typeof obj !== 'function' && isLength(obj.length);
 };
